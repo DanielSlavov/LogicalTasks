@@ -51,6 +51,8 @@ int func(int* _arr,int size,int desiredSize,int maxPasses)
     }
     for(int i=0;i<size;i++)
         sum+=arr[i];
+    
+    delete[]arr;
     return sum;
     
 }
